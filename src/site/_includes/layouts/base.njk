@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include 'partials/head.njk' %}
+  </head>
+  <body>
+    <header>
+      <div class="content-measure">
+          <span class="logo">frankly.</span>
+      </div>
+    </header>
+
+    {% block body %}
+      <main>
+        {% block mainContent %}
+          <div class="content">
+            <div class="content-measure">
+              {{ content | safe }}
+            </div>
+          </div>
+        {% endblock %}
+      </main>
+    {% endblock %}
+  </body>
+</html>
