@@ -14,64 +14,28 @@ This is Frankly, a joint venture between [Amy Hupe](#1) and [Adam Silver](#1) ai
 
 We specialise in UX design, content design, web accessibility, and design systems. If you need support in one of these areas, we offer:
 
-- website reviews
-- design system health checks
-- content writing and copyediting
-- UX design
-- team and individual coaching sessions
-- workshops
+<ul class="ticks">
+  <li>website reviews</li>
+  <li>design system health checks</li>
+  <li>content writing and copyediting</li>
+  <li>UX design</li>
+  <li>team and individual coaching sessions</li>
+  <li>workshops</li>
+</ul>
 
 ## Who we’ve worked with
 
 We’ve earned our stripes working on digital products and design systems for some of the very best organisations and teams including:
 
-<div class="clients-grid">
-  <div class="clients-grid__item">
-    <div class="client">
-      <img src="/assets/images/gov.svg">
-    </div>
-  </div>
-  <div class="clients-grid__item">
-    <div class="client">
-      <img src="/assets/images/babylon.png" style="max-width: 200px;">
-    </div>
-  </div>
-  <div class="clients-grid__item">
-    <div class="client">
-      <img src="/assets/images/ministry-of-justice.svg">
-    </div>
-  </div>
-  <div class="clients-grid__item">
-    <div class="client">
-      <img src="/assets/images/just-eat.svg">
-    </div>
-  </div>
-  <div class="clients-grid__item">
-    <div class="client">
-      <img src="/assets/images/ft.svg">
-    </div>
-  </div>
-  <div class="clients-grid__item">
-    <div class="client">
-      <img src="/assets/images/hmcts.svg">
-    </div>
-  </div>
-  <div class="clients-grid__item">
-    <div class="client">
-      <img src="/assets/images/t-mobile.svg">
-    </div>
-  </div>
-  <div class="clients-grid__item">
-    <div class="client">
-      <img src="/assets/images/tesco.svg">
-    </div>
-  </div>
-  <div class="clients-grid__item">
-    <div class="client">
-      <img src="/assets/images/bbc.svg">
-    </div>
-  </div>
-</div>
+- Government Digital Service
+- Ministry of Justice
+- The Financial Times
+- T-Mobile
+- Just Eat
+- Tesco
+- Selfridges
+- Babylon Health
+- Which?
 
 ## Our ethos
 
@@ -85,7 +49,7 @@ We think the web should be simple, straightforward and open to everyone. We aim 
 
 If you’re interested in the support we offer, we’d love to chat. Drop us an email at hello@wearefrankly.co and we’ll get in touch.
 
-## Amy
+## About Amy
 
 Hi, I’m Amy. I’m the brains behind this operation ;)
 
@@ -95,7 +59,7 @@ I’ve also worked as researcher, writer and editor at consumer charity Which?, 
 
 I care about making services accessible and inclusive, starting with the basics – the words we use to talk about them.
 
-## Adam
+## About Adam
 
 Hello, I’m Adam.
 
