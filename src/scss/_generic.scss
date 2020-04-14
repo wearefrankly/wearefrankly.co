@@ -23,6 +23,17 @@ header {
 	}
 }
 
+footer {
+	background: #ECC94B;
+	padding-top: 30px;
+	padding-bottom: 35px;
+
+	@include mq($from: md) {
+		padding-top: 60px;
+		padding-bottom: 70px;
+	}
+}
+
 a:link,
 a:visited {
 	color: $colour-black;
@@ -136,7 +147,7 @@ main {
 .profile__photo {
 	margin-bottom: 35px;
 	display: flex;
-
+	align-items: center;
 	img {
 		width: 3rem;
 		height: 3rem;
@@ -152,23 +163,24 @@ main {
 	}
 }
 
-.profile__photo-text {
-	margin-top: 5px;
-}
-
 .profile__photo-title {
 	text-transform: uppercase;
-	letter-spacing: 0.03em;
+	letter-spacing: 0.01em;
 	font-weight: bold;
-	font-size: 16px;
+	// color: #744210;
+}
+
+.profile__photo-description {
+	// color: #744210;
+	font-size: rem(14px);
 }
 
 .content {
 	// padding-top: 35px;
-	padding-bottom: 35px;
+	// padding-bottom: 35px;
 	@include mq($from: md) {
 		// padding-top: 80px;
-		padding-bottom: 80px;
+		// padding-bottom: 80px;
 	}
 }
 
