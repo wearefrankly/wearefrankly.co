@@ -4,11 +4,16 @@ permalink: /
 ---
 
 
-Hello.
+# Hello.
 
 However you got here, thanks for stopping by.
 
-This is Frankly, a joint venture between [Amy Hupe](#1) and [Adam Silver](#1) aimed at helping teams make better products for the web.
+This is Frankly, a collaboration between content designer and design systems expert, Amy Hupe and interaction design and forms expert Adam Silver.
+
+We believe that content and design are inseparable parts of the user experience. By creating them together, we can provide simple, smart products and services that put users at their heart.
+
+That’s why we’ve joined forces to offer a range of consultancy and freelance services aimed at helping teams make better products for the web.
+
 
 ## What we do
 
@@ -64,6 +69,7 @@ If you’re interested in the support we offer, we’d love to chat. Drop us an 
       <p>I spent 3 years as content lead for the GOV.‌UK Design System. Right now, I’m contracting as product manager for the design system at Babylon Health.</p>
       <p>I’ve also worked as researcher, writer and editor at consumer charity Which?, producing content on everything from compost to conveyancing.</p>
       <p>I care about making services accessible and inclusive, starting with the basics – the words we use to talk about them.</p>
+      <p><a href="https://adamsilver.io">Visit Amy’s blog</a></p>
     </div>
     <div class="profiles__panel profiles__panel--second">
       <div class="profile__photo">
@@ -78,6 +84,7 @@ If you’re interested in the support we offer, we’d love to chat. Drop us an 
       <p>I’ve been designing and building for the web for 20 years for the likes of Tesco, BBC and Just Eat. And recently I’ve helped government to design simple and accessible services.</p>
       <p>I wrote a book on how to design forms, published by Smashing Magazine.</p>
       <p>I love to design and build interfaces and interactions that nail the basics, avoid complexity and solve real user problems.</p>
+      <p><a href="https://adamsilver.io">Visit Adam’s blog</a></p>
     </div>
   </div>
 </div>
