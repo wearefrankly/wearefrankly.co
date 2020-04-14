@@ -4,7 +4,7 @@ html {
 }
 
 body {
-	border-top: 6px solid #1A202C;
+	border-top: 6px solid $colour-black;
   text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	font-size: 100%;
@@ -40,7 +40,7 @@ a:focus {
 .logo {
 	font-family: 'Libre Baskerville';
 	letter-spacing: -0.015em;
-	color: #1A202C;
+	color: $colour-black;
 	font-size: rem(50px);
 	@include mq($from: md) {
 		font-size: rem(80px);
@@ -112,7 +112,7 @@ main {
 	margin-top: 55px;
 	max-width: 620px;
 	letter-spacing: -0.01em;
-	color: #1A202C;
+	color: $colour-black;
 
 	@include mq($from: md) {
 		font-size: rem(65px);
@@ -134,7 +134,7 @@ main {
 	max-width: 620px;
 	letter-spacing: -0.02em;
 	font-family: 'Libre Baskerville';
-	color: #1A202C;
+	color: $colour-black;
 
 	@include mq($from: md) {
 		font-size: rem(25px);
@@ -171,7 +171,7 @@ main {
 	font-size: rem(16px);
 	line-height: rem(25px);
 	margin-bottom: $spacing-scale-4;
-	color: #2D3748;
+	color: $colour-black;
 
 	@include mq($from: md) {
 		font-size: rem(20px);
@@ -186,7 +186,7 @@ main {
 	font-size: rem(16px);
 	line-height: rem(25px);
 	margin-bottom: 25px;
-	color: #2D3748;
+	color: $colour-black;
 
 	@include mq($from: md) {
 		font-size: rem(20px);
