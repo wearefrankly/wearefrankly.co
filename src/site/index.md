@@ -49,25 +49,35 @@ We think the web should be simple, straightforward and open to everyone. We aim 
 
 If you’re interested in the support we offer, we’d love to chat. Drop us an email at hello@wearefrankly.co and we’ll get in touch.
 
-## About Amy
-
-Hi, I’m Amy. I’m the brains behind this operation ;)
-
-I spent 3 years as content lead for the GOV.‌UK Design System. Right now, I’m contracting as product manager for the design system at Babylon Health.
-
-I’ve also worked as researcher, writer and editor at consumer charity Which?, producing content on everything from compost to conveyancing.
-
-I care about making services accessible and inclusive, starting with the basics – the words we use to talk about them.
-
-## About Adam
-
-Hello, I’m Adam.
-
-I’ve been designing and building web things for 20 years for a whole load of different organisations including Tesco, BBC, Just Eat, Selfridges, The Financial Times and many more.
-
-Most recently I’ve been helping various government departments design and launch services that are useful, usable and accessible.
-
-I wrote a book on how to design forms, published by Smashing Magazine.
-
-My modus operandi is creating simple and inclusive interfaces and interactions that nail the basics, avoid complexity and solve real user problems.
-
+<div class="profiles">
+  <div class="profiles__inner">
+    <div class="profiles__panel profiles__panel--first">
+      <div class="profile__photo">
+        <img src="/assets/images/amy.jpg" alt="A photo of Brandon Newton looking trustworthy">
+        <div class="profile__photo-text">
+          <div class="profile__photo-title">Amy Hupe</div>
+          <div class="profile__photo-description">Content designer and design systems expert</div>
+        </div>
+      </div>
+      <!-- <h2>About Amy</h2> -->
+      <p>Hi, I’m Amy. I’m the brains behind this operation ;)</p>
+      <p>I spent 3 years as content lead for the GOV.‌UK Design System. Right now, I’m contracting as product manager for the design system at Babylon Health.</p>
+      <p>I’ve also worked as researcher, writer and editor at consumer charity Which?, producing content on everything from compost to conveyancing.</p>
+      <p>I care about making services accessible and inclusive, starting with the basics – the words we use to talk about them.</p>
+    </div>
+    <div class="profiles__panel profiles__panel--second">
+      <div class="profile__photo">
+        <img src="/assets/images/adam.jpeg" alt="A photo of Brandon Newton looking trustworthy">
+        <div class="profile__photo-text">
+          <div class="profile__photo-title">Adam Silver</div>
+          <div class="profile__photo-description">Interaction designer and forms expert</div>
+        </div>
+      </div>
+      <!-- <h2>About Adam</h2> -->
+      <p>Hey, I’m Adam.</p>
+      <p>I’ve been designing and building for the web for 20 years for the likes of Tesco, BBC and Just Eat. And recently I’ve helped government to design simple and accessible services.</p>
+      <p>I wrote a book on how to design forms, published by Smashing Magazine.</p>
+      <p>I love to design and build interfaces and interactions that nail the basics, avoid complexity and solve real user problems.</p>
+    </div>
+  </div>
+</div>
