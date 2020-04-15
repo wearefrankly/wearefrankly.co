@@ -54,7 +54,7 @@ If you’re interested in the support we offer, we’d love to chat. Drop us an 
 
 <div class="profiles">
   <div class="profiles__inner">
-    <div class="profiles__panel profiles__panel--first">
+    <div class="profiles__panel profiles__panel--first" id="amy">
       <div class="profile__photo">
         <img src="/assets/images/amy.jpg" alt="A photo of Brandon Newton looking trustworthy">
         <div class="profile__photo-text">
@@ -69,7 +69,7 @@ If you’re interested in the support we offer, we’d love to chat. Drop us an 
       <p>I care about making services accessible and inclusive, starting with the basics – the words we use to talk about them.</p>
       <p><a href="https://amyhupe.co.uk">Visit Amy’s blog</a></p>
     </div>
-    <div class="profiles__panel profiles__panel--second">
+    <div class="profiles__panel profiles__panel--second" id="adam">
       <div class="profile__photo">
         <img src="/assets/images/adam.jpg" alt="A photo of Brandon Newton looking trustworthy">
         <div class="profile__photo-text">
