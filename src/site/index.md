@@ -3,17 +3,15 @@ layout: layouts/base.njk
 permalink: /
 ---
 
-
 # Hello.
 
 However you got here, thanks for stopping by.
 
-This is Frankly, a collaboration between content designer and design systems expert, Amy Hupe and interaction design and forms expert Adam Silver.
+This is Frankly, a collaboration between content designer and design systems expert, [Amy Hupe](#amy) and interaction design and forms expert, [Adam Silver](#adam).
 
 We believe that content and design are inseparable parts of the user experience. By creating them together, we can provide simple, smart products and services that put users at their heart.
 
 That’s why we’ve joined forces to offer a range of consultancy and freelance services aimed at helping teams make better products for the web.
-
 
 ## What we do
 
@@ -69,11 +67,11 @@ If you’re interested in the support we offer, we’d love to chat. Drop us an 
       <p>I spent 3 years as content lead for the GOV.‌UK Design System. Right now, I’m contracting as product manager for the design system at Babylon Health.</p>
       <p>I’ve also worked as researcher, writer and editor at consumer charity Which?, producing content on everything from compost to conveyancing.</p>
       <p>I care about making services accessible and inclusive, starting with the basics – the words we use to talk about them.</p>
-      <p><a href="https://adamsilver.io">Visit Amy’s blog</a></p>
+      <p><a href="https://amyhupe.co.uk">Visit Amy’s blog</a></p>
     </div>
     <div class="profiles__panel profiles__panel--second">
       <div class="profile__photo">
-        <img src="/assets/images/adam.jpeg" alt="A photo of Brandon Newton looking trustworthy">
+        <img src="/assets/images/adam.jpg" alt="A photo of Brandon Newton looking trustworthy">
         <div class="profile__photo-text">
           <div class="profile__photo-title">Adam Silver</div>
           <div class="profile__photo-description">Interaction designer and forms expert</div>
