@@ -15,7 +15,6 @@ body {
 header {
 	padding-top: 30px;
 	padding-bottom: 35px;
-
 	@include mq($from: md) {
 		padding-top: 60px;
 		padding-bottom: 70px;
@@ -117,7 +116,7 @@ main {
 
 .profiles {
 	margin-top: 75px;
-	background: #FAF089;
+	border-top: 2px solid $colour-black;
 }
 
 .profiles__inner {
@@ -144,10 +143,10 @@ main {
 }
 
 .profiles__panel--first {
-	border-bottom: 2px solid #F6E05E;
+	border-bottom: 2px solid $colour-black;
 	@include mq($from: lg) {
 		padding-left: 0;
-		border-right: 1px solid #F6E05E;
+		border-right: 1px solid $colour-black;
 		border-bottom: 0;
 	}
 }
@@ -155,7 +154,7 @@ main {
 .profiles__panel--second {
 	@include mq($from: lg) {
 		padding-right: 0;
-		border-left: 1px solid #F6E05E;
+		border-left: 1px solid $colour-black;
 	}
 }
 
