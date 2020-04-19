@@ -23,7 +23,7 @@ header {
 }
 
 footer {
-	background: #ECC94B;
+	background: $colour-black;
 	padding-top: 30px;
 	padding-bottom: 35px;
 	line-height: 1;
@@ -33,6 +33,8 @@ footer {
 		padding-top: 30px;
 		padding-bottom: 80px;
 	}
+
+	color: #ECC94B;
 }
 
 a:link,
@@ -120,6 +122,8 @@ main {
 }
 
 .profiles__inner {
+	max-width: 960px;
+	margin: 0 auto;
 	@include mq($from: lg) {
 		display: flex;
 		flex-wrap: wrap;
