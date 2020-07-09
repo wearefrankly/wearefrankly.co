@@ -12,7 +12,7 @@ body {
 	background: #F6E05E;
 }
 
-.visually-hidden {
+.app-visually-hidden {
 	border: 0!important;
 	clip: rect(0 0 0 0)!important;
 	height: 1px!important;
@@ -349,4 +349,18 @@ ul.ticks li {
 		top: 1px;
 		left: -20px;
   }
+}
+
+.app-copy-button {
+	display: inline-block;
+	margin-left: $spacing-scale-1;
+	background: $colour-black;
+	border: none;
+	color: $colour-white;
+	padding: $spacing-scale-1 $spacing-scale-2;
+	border-radius: 4px;
+}
+
+.app-copy-button:hover {
+	background-color: #444;
 }
