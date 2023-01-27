@@ -28,6 +28,7 @@
     "require-dir": "^1.0.0"
   },
   "dependencies": {
-    "moment": "^2.22.2"
+    "moment": "^2.22.2",
+    "node-sass": "^8.0.0"
   }
 }

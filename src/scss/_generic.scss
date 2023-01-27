@@ -24,7 +24,7 @@ body {
 }
 
 header {
-	padding-top: 30px;
+	padding-top: 25px;
 	padding-bottom: 35px;
 	@include mq($from: md) {
 		padding-top: 60px;
@@ -32,6 +32,21 @@ header {
 	}
 }
 
+nav {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid $colour-black;
+
+	& a {
+		margin-right: 30px;
+		text-decoration: none;
+		font-size: 1.25rem;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
 footer {
 	background: $colour-black;
 	padding-top: 30px;
@@ -68,6 +83,7 @@ a:focus {
 	@include mq($from: md) {
 		font-size: rem(80px);
 	}
+		text-decoration: none;
 }
 
 main {
