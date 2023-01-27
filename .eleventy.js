@@ -6,65 +6,69 @@ module.exports = config => {
 
   let markdownIt = require("markdown-it");
   let markdownItAnchor = require('markdown-it-anchor');
-  let options = {
+  let markdownOptions = {
     html: true,
     breaks: true,
-    linkify: true
+    linkify: true,
   };
 
-  config.setLibrary("md", markdownIt(options).use(markdownItAnchor, {
-    permalink: false
-    // permalinkSymbol: '',
-    // permalinkBefore: true,
-    // level: 2
-  }));
+  config.setLibrary(
+    "md",
+    markdownIt(markdownOptions).use(markdownItAnchor, {
+      permalink: false,
+      // permalinkSymbol: '',
+      // permalinkBefore: true,
+      // level: 2
+    })
+  );
 
   config.addPlugin(pluginRss);
 
-  config.addFilter('permalink', str => {
-    str = str || '';
-    return str.replace(/\.html/g, '');
+  config.addFilter("permalink", (str) => {
+    str = str || "";
+    return str.replace(/\.html/g, "");
   });
 
-  config.addFilter("date", function(value) {
-    return moment(value).format('D MMM YYYY');
+  config.addFilter("date", function (value) {
+    return moment(value).format("D MMM YYYY");
   });
 
-  config.addFilter("monthyear", function(value) {
-    return moment(value).format('MMMM YYYY');
+  config.addFilter("monthyear", function (value) {
+    return moment(value).format("MMMM YYYY");
   });
 
-  config.addFilter("year", function(value) {
-    return moment(value).format('YYYY');
+  config.addFilter("year", function (value) {
+    return moment(value).format("YYYY");
   });
 
-  config.addFilter('strip_html', str => {
+  config.addFilter("strip_html", (str) => {
     return str.replace(
       /<script.*?<\/script>|<!--.*?-->|<style.*?<\/style>|<.*?>/g,
-      ''
-    )
+      ""
+    );
   });
 
-  config.addCollection('article', function(collection) {
-    return collection.getFilteredByTag('article').filter(function(item) {
+  config.addCollection("article", function (collection) {
+    return collection.getFilteredByTag("article").filter(function (item) {
       return item.data.permalink;
     });
   });
 
-
-  config.addCollection('case-study', function(collection) {
-    return collection.getFilteredByTag('case-study').filter(function(item) {
+  config.addCollection("case-study", function (collection) {
+    return collection.getFilteredByTag("case-study").filter(function (item) {
       return item.data.permalink;
     });
   });
 
   config
-  .addPassthroughCopy('src/site/assets/fonts')
-  .addPassthroughCopy('src/site/site.webmanifest')
-  .addPassthroughCopy('src/site/assets/images')
-  .addPassthroughCopy('src/site/_redirects')
+    .addPassthroughCopy("src/site/assets/fonts")
+    .addPassthroughCopy("src/site/site.webmanifest")
+    .addPassthroughCopy("src/site/assets/images")
+    .addPassthroughCopy("src/site/_redirects");
 
-  config.setTemplateFormats(['njk', 'md', 'html', 'png', 'ico', 'svg', 'xml']);
+  config.setTemplateFormats(["njk", "md", "html", "png", "ico", "svg", "xml"]);
+
+
 
   return {
     dir: {

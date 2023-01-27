@@ -1,382 +1,398 @@
 html {
-	font-size: 100%;
-	font-family: 'Raleway', arial, sans-serif;
+  font-size: 100%;
+  font-family: "Raleway", arial, sans-serif;
 }
 
 body {
-	border-top: 6px solid $colour-black;
+  border-top: 6px solid $colour-black;
   text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	font-size: 100%;
-	color: $colour-black;
-	background: #F6E05E;
+  -webkit-font-smoothing: antialiased;
+  font-size: 100%;
+  color: $colour-black;
+  background: #f6e05e;
 }
 
 .app-visually-hidden {
-	border: 0!important;
-	clip: rect(0 0 0 0)!important;
-	height: 1px!important;
-	margin: -1px!important;
-	overflow: hidden!important;
-	padding: 0!important;
-	position: absolute!important;
-	width: 1px!important;
+  border: 0 !important;
+  clip: rect(0 0 0 0) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
 }
 
 header {
-	padding-top: 25px;
-	padding-bottom: 35px;
-	@include mq($from: md) {
-		padding-top: 60px;
-		padding-bottom: 70px;
-	}
+  padding-top: 25px;
+  padding-bottom: 35px;
+  @include mq($from: md) {
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
 }
 
 nav {
-	padding-top: 30px;
-	padding-bottom: 30px;
-	border-bottom: 1px solid $colour-black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid $colour-black;
+  display: flex;
+  justify-content: space-between;
 
-	& a {
-		margin-right: 30px;
-		text-decoration: none;
-		font-size: 1.25rem;
+  @include mq($from: md) {
+    display: block;
+  }
+  & a {
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 1rem 0;
 
-		&:hover {
-			text-decoration: underline;
-		}
-	}
+    @include mq($from: md) {
+      font-size: 1.25rem;
+      margin-right: 4rem;
+    }
+
+    &:hover,
+    &.nav-active {
+      box-shadow: inset 0 -3px 0 $colour-black;
+    }
+  }
 }
 footer {
-	background: $colour-black;
-	padding-top: 30px;
-	padding-bottom: 35px;
-	line-height: 1;
-	color: #ECC94B;
+  background: $colour-black;
+  padding-top: 30px;
+  padding-bottom: 35px;
+  line-height: 1;
+  color: #ecc94b;
 
-	@include mq($from: md) {
-		padding-top: 40px;
-		padding-bottom: 40px;
-	}
-
+  @include mq($from: md) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 a:link,
 a:visited {
-	color: $colour-black;
+  color: $colour-black;
 }
 
 a:hover,
 a:focus {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 a:focus {
-	// outline: 3px solid $colour-yellow-500;
+  // outline: 3px solid $colour-yellow-500;
 }
 
 .logo {
-	font-family: 'Libre Baskerville';
-	letter-spacing: -0.015em;
-	color: $colour-black;
-	font-size: rem(50px);
-	@include mq($from: md) {
-		font-size: rem(80px);
-	}
-		text-decoration: none;
+  font-family: "Libre Baskerville";
+  letter-spacing: -0.015em;
+  color: $colour-black;
+  font-size: rem(50px);
+  @include mq($from: md) {
+    font-size: rem(80px);
+  }
+  text-decoration: none;
 }
 
 main {
-	display: block;
+  display: block;
+  figure {
+    img {
+      width: 100%;
+    }
+  }
 }
 
 .clients-grid {
-	display: flex;
-	flex-wrap: wrap;
-	border: 1px solid #718096;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #718096;
 }
 
 .clients-grid__item {
-	box-sizing: border-box;
-	margin-bottom: 30px;
-	padding: 0 15px;
-	width: 100%;
-	@include mq($from: md) {
-		width: 50%;
-	}
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  padding: 0 15px;
+  width: 100%;
+  @include mq($from: md) {
+    width: 50%;
+  }
 
-	@include mq($from: lg) {
-		width: 33%;
-	}
+  @include mq($from: lg) {
+    width: 33%;
+  }
 }
 
 .client {
-	align-items: center;
-	box-sizing: border-box;
-	display: flex;
-	height: 155px;
-	justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  height: 155px;
+  justify-content: center;
 
-	img {
-		flex-shrink: 0;
-		display: block;
-		max-width: 100%;
-	}
+  img {
+    flex-shrink: 0;
+    display: block;
+    max-width: 100%;
+  }
 }
 
 .contact {
-	background: $colour-black;
-	margin-top: $spacing-scale-10;
-	padding-top: 100px;
-	padding-bottom: 100px;
+  background: $colour-black;
+  margin-top: $spacing-scale-10;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .contact h2 {
-	margin-top: 0;
-	color: $colour-white;
+  margin-top: 0;
+  color: $colour-white;
 }
 
 .contact p {
-	color: $colour-white;
-	margin-bottom: 0;
+  color: $colour-white;
+  margin-bottom: 0;
 }
 
 .profiles {
-	margin-top: 75px;
-	border-top: 2px solid $colour-black;
+  margin-top: 75px;
+  border-top: 2px solid $colour-black;
 }
 
 .profiles__inner {
-	max-width: 960px;
-	margin: 0 auto;
-	@include mq($from: lg) {
-		display: flex;
-		flex-wrap: wrap;
-	}
+  max-width: 960px;
+  margin: 0 auto;
+  @include mq($from: lg) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .profiles__panel {
-	padding: 55px 30px;
+  padding: 55px 30px;
 
-	@include mq($from: lg) {
-		box-sizing: border-box;
-		// flex-direction: column;
-		width: 50%;
-	}
+  @include mq($from: lg) {
+    box-sizing: border-box;
+    // flex-direction: column;
+    width: 50%;
+  }
 }
 
 .profiles__panel p:last-child {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .profiles__panel--first {
-	border-bottom: 2px solid $colour-black;
-	@include mq($from: lg) {
-		padding-left: 0;
-		border-right: 1px solid $colour-black;
-		border-bottom: 0;
-	}
+  border-bottom: 2px solid $colour-black;
+  @include mq($from: lg) {
+    padding-left: 0;
+    border-right: 1px solid $colour-black;
+    border-bottom: 0;
+  }
 }
 
 .profiles__panel--second {
-	@include mq($from: lg) {
-		padding-right: 0;
-		border-left: 1px solid $colour-black;
-	}
+  @include mq($from: lg) {
+    padding-right: 0;
+    border-left: 1px solid $colour-black;
+  }
 }
 
 .profile__photo {
-	margin-bottom: 35px;
-	display: flex;
-	align-items: center;
-	img {
-		width: 3rem;
-		height: 3rem;
-		box-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -2px rgba(0,0,0,.05);
-		border-width: 2px;
-		border-radius: 9999px;
-		border-color: $colour-black;
-		border-style: solid;
-		max-width: 100%;
-		height: auto;
-		display: block;
-		margin-right: 10px;
-	}
+  margin-bottom: 35px;
+  display: flex;
+  align-items: center;
+  img {
+    width: 3rem;
+    height: 3rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-width: 2px;
+    border-radius: 9999px;
+    border-color: $colour-black;
+    border-style: solid;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-right: 10px;
+  }
 }
 
 .profile__photo-title {
-	text-transform: uppercase;
-	letter-spacing: 0.01em;
-	font-weight: bold;
-	font-size: rem(13px);
-	line-height: rem(15px);
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  font-weight: bold;
+  font-size: rem(13px);
+  line-height: rem(15px);
 
-	@include mq($from: md) {
-		font-size: rem(16px);
-		line-height: rem(20px);
-	}
+  @include mq($from: md) {
+    font-size: rem(16px);
+    line-height: rem(20px);
+  }
 }
 
 .profile__photo-description {
-	font-size: rem(14px);
-	line-height: rem(15px);
+  font-size: rem(14px);
+  line-height: rem(15px);
 
-	@include mq($from: md) {
-		font-size: rem(16px);
-		line-height: rem(20px);
-	}
+  @include mq($from: md) {
+    font-size: rem(16px);
+    line-height: rem(20px);
+  }
 }
 
 .content {
-	// padding-top: 35px;
-	// padding-bottom: 35px;
-	@include mq($from: md) {
-		// padding-top: 80px;
-		// padding-bottom: 80px;
-	}
+  // padding-top: 35px;
+  // padding-bottom: 35px;
+  @include mq($from: md) {
+    // padding-top: 80px;
+    // padding-bottom: 80px;
+  }
 }
 
 .content-measure {
-	max-width: 960px;
-	margin-left: 30px;
-	margin-right: 30px;
+  max-width: 960px;
+  margin-left: 30px;
+  margin-right: 30px;
 
-	@include mq($from: 1240px) {
-		margin-left: auto;
-		margin-right: auto;
-	}
+  @include mq($from: 1240px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .content h1 {
-	max-width: 620px;
-	font-size: rem(16px);
-	line-height: rem(25px);
-	margin-bottom: $spacing-scale-4;
-	color: $colour-black;
-	font-weight: normal;
+  max-width: 620px;
+  font-size: rem(16px);
+  line-height: rem(25px);
+  margin-bottom: $spacing-scale-4;
+  color: $colour-black;
+  font-weight: normal;
 
-	@include mq($from: md) {
-		font-size: rem(20px);
-		line-height: rem(30px);
-		margin-bottom: $spacing-scale-6;
-	}
+  @include mq($from: md) {
+    font-size: rem(20px);
+    line-height: rem(30px);
+    margin-bottom: $spacing-scale-6;
+  }
 }
 
 h2 {
-	font-size: rem(22px);
-	line-height: 25px;
-	margin-bottom: 20px;
-	margin-top: 55px;
-	max-width: 620px;
-	letter-spacing: -0.02em;
-	font-family: 'Libre Baskerville';
-	color: $colour-black;
+  font-size: rem(22px);
+  line-height: 25px;
+  margin-bottom: 20px;
+  margin-top: 55px;
+  max-width: 620px;
+  letter-spacing: -0.02em;
+  font-family: "Libre Baskerville";
+  color: $colour-black;
 
-	@include mq($from: md) {
-		font-size: rem(25px);
-		line-height: rem(25px);
-		margin-top: 75px;
-	}
+  @include mq($from: md) {
+    font-size: rem(25px);
+    line-height: rem(25px);
+    margin-top: 75px;
+  }
 }
 
 h3 {
-	font-size: rem(16px);
-	line-height: rem(25px);
-	margin-top: 35px;
-	margin-bottom: 10px;
-	max-width: 620px;
-	letter-spacing: -0.01em;
+  font-size: rem(16px);
+  line-height: rem(25px);
+  margin-top: 35px;
+  margin-bottom: 10px;
+  max-width: 620px;
+  letter-spacing: -0.01em;
 
-	@include mq($from: md) {
-		font-size: rem(20px);
-		line-height: rem(30px);
-		margin-top: 35px;
-		margin-bottom: 10px;
-	}
+  @include mq($from: md) {
+    font-size: rem(20px);
+    line-height: rem(30px);
+    margin-top: 35px;
+    margin-bottom: 10px;
+  }
 
-	&:first-child {
-		margin-top: 0;
-	}
+  &:first-child {
+    margin-top: 0;
+  }
 }
 
 p {
-	max-width: 620px;
-	font-size: rem(16px);
-	line-height: rem(25px);
-	margin-bottom: $spacing-scale-4;
-	color: $colour-black;
+  max-width: 620px;
+  font-size: rem(16px);
+  line-height: rem(25px);
+  margin-bottom: $spacing-scale-4;
+  color: $colour-black;
 
-	@include mq($from: md) {
-		font-size: rem(20px);
-		line-height: rem(30px);
-		margin-bottom: $spacing-scale-6;
-	}
+  @include mq($from: md) {
+    font-size: rem(20px);
+    line-height: rem(30px);
+    margin-bottom: $spacing-scale-6;
+  }
 }
 
 p.lede {
-	max-width: 620px;
-	font-size: rem(19px);
-	line-height: rem(30px);
-	margin-bottom: $spacing-scale-4;
-	color: $colour-black;
+  max-width: 620px;
+  font-size: rem(19px);
+  line-height: rem(30px);
+  margin-bottom: $spacing-scale-4;
+  color: $colour-black;
 
-	@include mq($from: md) {
-		font-size: rem(25px);
-		line-height: rem(35px);
-		margin-bottom: $spacing-scale-6;
-	}
+  @include mq($from: md) {
+    font-size: rem(25px);
+    line-height: rem(35px);
+    margin-bottom: $spacing-scale-6;
+  }
 }
 
 ul,
 ol {
-	max-width: 620px;
-	font-size: rem(16px);
-	line-height: rem(25px);
-	margin-bottom: 25px;
-	color: $colour-black;
+  max-width: 620px;
+  font-size: rem(16px);
+  line-height: rem(25px);
+  margin-bottom: 25px;
+  color: $colour-black;
 
-	@include mq($from: md) {
-		font-size: rem(20px);
-		line-height: rem(30px);
-		margin-bottom: 30px;
-	}
+  @include mq($from: md) {
+    font-size: rem(20px);
+    line-height: rem(30px);
+    margin-bottom: 30px;
+  }
 }
 
 ol li,
 ul li {
-	margin-left: $spacing-scale-4;
-	margin-bottom: $spacing-scale-3;
+  margin-left: $spacing-scale-4;
+  margin-bottom: $spacing-scale-3;
 }
 
 ul.ticks li {
-	padding-left: $spacing-scale-4;
-	margin-bottom: $spacing-scale-3;
-	list-style: none;
-	position: relative;
-	&:before {
-    content: '';
+  padding-left: $spacing-scale-4;
+  margin-bottom: $spacing-scale-3;
+  list-style: none;
+  position: relative;
+  &:before {
+    content: "";
     display: inline-block;
     height: 1.4em;
     width: 1.4em;
     background-image: url(/assets/images/icon-check.svg);
     background-size: contain;
     background-repeat: no-repeat;
-		position: absolute;
-		top: 1px;
-		left: -20px;
+    position: absolute;
+    top: 1px;
+    left: -20px;
   }
 }
 
 .app-copy-button {
-	display: inline-block;
-	margin-left: $spacing-scale-1;
-	background: $colour-black;
-	border: none;
-	color: $colour-white;
-	padding: $spacing-scale-1 $spacing-scale-2;
-	border-radius: 4px;
+  display: inline-block;
+  margin-left: $spacing-scale-1;
+  background: $colour-black;
+  border: none;
+  color: $colour-white;
+  padding: $spacing-scale-1 $spacing-scale-2;
+  border-radius: 4px;
 }
 
 .app-copy-button:hover {
-	background-color: #444;
+  background-color: #444;
 }
